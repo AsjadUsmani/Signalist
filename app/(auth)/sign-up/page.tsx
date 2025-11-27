@@ -37,7 +37,7 @@ const SignUp = () => {
       <h1 className="form-title">SignUp and Personalize</h1>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
         <InputField
-        name="fullname"
+        name="fullName"
         label="Full Name"
         placeholder="John Doe."
         error={errors.fullName}
@@ -63,7 +63,7 @@ const SignUp = () => {
         />
         <CountrySelectField
         name="country"
-        label="country"
+        label="Country"
         control={control}
         error={errors.country}
         required
@@ -87,8 +87,8 @@ const SignUp = () => {
         required
         />
         <SelectField
-        name="preferedIndustry"
-        label="Prefered Industry"
+        name="prefferedIndustry"
+        label="Preffered Industry"
         placeholder="Select your Prefered Industry"
         options={PREFERRED_INDUSTRIES}
         control={control}
